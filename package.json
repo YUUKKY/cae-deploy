@@ -13,8 +13,8 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
-    "@huaweicloud/huaweicloud-sdk-cae": "^3.1.136",
-    "@huaweicloud/huaweicloud-sdk-core": "^3.1.136"
+    "@huaweicloud/huaweicloud-sdk-cae": "^3.1.139",
+    "@huaweicloud/huaweicloud-sdk-core": "^3.1.139"
   },
   "devDependencies": {
     "@types/node": "^22.13.10"
