@@ -72,7 +72,7 @@ export class CAEAppDeployment implements BaseAppDeployment {
                             core.error(error.message);
                         });
                     }
-                }, 1000);
+                }, 5000);
             }
         );
     }
