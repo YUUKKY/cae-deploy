@@ -61,6 +61,7 @@ export class CAEAppDeployment implements BaseAppDeployment {
         let result = await this.caeClient.executeAction(upgradeReq);
         let jobID = result.jobId;
         if (jobID === undefined) {
+            core.error(result)
             throw new Error("job id could not be found");
         } else {
             this.checkJobStatus(jobID).then(result => {
