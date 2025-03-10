@@ -1,0 +1,51 @@
+# Hello world javascript action
+
+This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+
+## Inputs
+
+### `project-id`
+
+**Required** The project ID of the HUAWEI Cloud account.
+
+### `ak`
+
+**Required** The project ID of the HUAWEI Cloud account.
+
+### `sk`
+
+**Required** The project ID of the HUAWEI Cloud account.
+
+### `environment-id`
+
+**Required** The project ID of the HUAWEI Cloud account.
+
+### `application-id`
+
+**Required** The project ID of the HUAWEI Cloud account.
+
+### `component-id`
+
+**Required** The project ID of the HUAWEI Cloud account.
+
+### `image-address`
+
+**Required** The project ID of the HUAWEI Cloud account.
+
+### `component-version`
+
+**Required** The project ID of the HUAWEI Cloud account.
+
+## Outputs
+
+### `time`
+
+The time we greeted you.
+
+## Example usage
+
+```yaml
+uses: actions/cae-deploy@v1
+with:
+  who-to-greet: 'Mona the Octocat'
+```

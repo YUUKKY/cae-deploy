@@ -1,0 +1,45 @@
+name: 'CAE upgrade'
+description: 'upgrade CAE component'
+inputs:
+  project-id:  # id of the project id
+    description: 'the project id of the huawei cloud account'
+    required: true
+    default: ''
+  ak: # access key, obtained from huawei cloud IAM
+    description: 'access key'
+    required: true
+    default: ''
+  sk: # secret key, obtained from huawei cloud IAM
+    description: 'secret key'
+    required: true
+    default: ''
+  region-name: # region name of the CAE environment
+    description: 'region name'
+    required: true
+    default: ''
+  environment-id: # id of the application, obtained from huawei cloud CAE
+    description: 'environment id'
+    required: true
+    default: ''
+  application-id: # id of the application, obtained from huawei cloud CAE
+    description: 'application id'
+    required: true
+    default: ''
+  component-id: # id of the component, obtained from huawei cloud CAE
+    description: 'component id'
+    required: true
+    default: ''
+  image-address: # the swr image address
+    description: 'the swr image address'
+    required: true
+    default: ''
+  component-version: # version of the component
+    description: 'the new component version'
+    required: true
+    default: ''
+outputs:
+  result:
+    description: 'The result of upgrade process'
+runs:
+  using: 'node20'
+  main: 'index.js'

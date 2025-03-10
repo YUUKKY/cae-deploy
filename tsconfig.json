@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {     /* Skip type checking all .d.ts files. */
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

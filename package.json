@@ -1,0 +1,22 @@
+{
+  "name": "github-action",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "@huaweicloud/huaweicloud-sdk-cae": "^3.1.136",
+    "@huaweicloud/huaweicloud-sdk-core": "^3.1.136"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10"
+  }
+}
