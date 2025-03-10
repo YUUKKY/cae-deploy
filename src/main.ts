@@ -1,4 +1,4 @@
-import {ActionInputs} from "./model/actionInput";
+import {ActionInputs} from "./model/ActionInput";
 import {DeploymentFactory} from './service/DeploymentFactory';
 import * as core from '@actions/core';
 

@@ -42,4 +42,4 @@ outputs:
     description: 'The result of upgrade process'
 runs:
   using: 'node20'
-  main: 'index.js'
+  main: 'lib/main.js'

@@ -1,6 +1,6 @@
 import {BaseAppDeployment} from "./BaseAppDeployment";
 import {CAEAppDeployment} from "./CAEAppDeployment";
-import {ActionInputs} from "../model/actionInput";
+import {ActionInputs} from "../model/ActionInput";
 
 export class DeploymentFactory {
 

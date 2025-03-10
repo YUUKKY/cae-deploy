@@ -2,7 +2,7 @@ import * as core from '@actions/core';
 import * as HuaweiIAM from '@huaweicloud/huaweicloud-sdk-core';
 import * as HuaweiCAE from '@huaweicloud/huaweicloud-sdk-cae/v1/public-api';
 import {BaseAppDeployment} from './BaseAppDeployment';
-import {ActionInputs} from "../model/actionInput";
+import {ActionInputs} from "../model/ActionInput";
 import {CaeClient} from "@huaweicloud/huaweicloud-sdk-cae/v1/CaeClient";
 import {ICredential} from "@huaweicloud/huaweicloud-sdk-core/auth/ICredential";
 import {ExecuteActionRequest} from "@huaweicloud/huaweicloud-sdk-cae/v1/model/ExecuteActionRequest";
@@ -61,6 +61,7 @@ export class CAEAppDeployment implements BaseAppDeployment {
         let result = await this.caeClient.executeAction(upgradeReq);
         let jobID = result.jobId;
         if (jobID === undefined) {
+            console.log(result)
             throw new Error("job id could not be found");
         } else {
             this.checkJobStatus(jobID).then(result => {
