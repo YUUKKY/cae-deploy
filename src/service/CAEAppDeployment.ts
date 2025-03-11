@@ -66,7 +66,7 @@ export class CAEAppDeployment implements BaseAppDeployment {
             console.log("jobID:" + parseResult.job_id);
             throw new Error("job id could not be found");
         } else {
-            this.checkJobStatus(parseResult.jobId).then(result => {
+            this.checkJobStatus(parseResult.job_id).then(result => {
                 core.info(result);
             }).catch(error => {
                 core.error(error.message);
